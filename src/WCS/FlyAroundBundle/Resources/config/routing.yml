@@ -1,0 +1,19 @@
+wcs_fly_around_planemodel:
+    resource: "@WCSFlyAroundBundle/Resources/config/routing/planemodel.yml"
+    prefix:   /planemodel
+
+wcs_fly_around_homepage:
+    path:     /
+    defaults: { _controller: WCSFlyAroundBundle:Default:index }
+
+wcs_fly_around_flight:
+    resource: "@WCSFlyAroundBundle/Resources/config/routing/flight.yml"
+    prefix:   /flight
+
+wcs_fly_around_reservation:
+    resource: "@WCSFlyAroundBundle/Resources/config/routing/reservation.yml"
+    prefix:   /reservation
+
+wcs_fly_around_terrain:
+    resource: "@WCSFlyAroundBundle/Resources/config/routing/terrain.yml"
+    prefix:   /terrain

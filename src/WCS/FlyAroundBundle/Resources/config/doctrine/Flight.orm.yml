@@ -1,0 +1,27 @@
+WCS\FlyAroundBundle\Entity\Flight:
+    type: entity
+    table: null
+    repositoryClass: WCS\FlyAroundBundle\Repository\FlightRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        departure:
+            type: string
+            length: '4'
+            nullable: true
+        arrival:
+            type: string
+            length: '4'
+            nullable: true
+        pilot:
+            type: string
+            length: 255
+        freeSeats:
+            type: integer
+        takeofTime:
+            type: datetime
+    lifecycleCallbacks: {  }
